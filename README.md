@@ -1,19 +1,58 @@
-# Digital Twin Management System
+# Система управления цифровым двойником
 
-This application to edit, save and calculate Digital Twins. Allows you to add new prefabs and connect them modularly to the system. Objects can be connected by weights, after which a step-by-step simulation of the work of the double takes place during the calculation.
+Приложение для редактирования, сохранения и расчета цифровых двойников производственных процессов. Система позволяет добавлять новые префабы, модульно соединять объекты между собой и запускать пошаговую симуляцию работы двойника с учетом связей и весов.
 
-## Stack
+## Возможности
 
-- Microsoft Visual Studio 2022
-- .NET 6.0
+- Визуальное редактирование сцены цифрового двойника.
+- Добавление и настройка префабов (машины, конвейеры, трубы, рабочие и другие элементы).
+- Соединение объектов в производственную цепочку.
+- Расчет и пошаговая симуляция поведения системы.
+- Сохранение и дальнейшая доработка конфигурации.
+
+## Технологический стек
+
 - Unity 2022.*
+- .NET 6.0
+- Microsoft Visual Studio 2022
 
-## Installation
+## Требования
 
-1. Clone the respository
-2. Build project
-3. Enjoy!
+- Windows 10/11.
+- Установленный Unity Hub и Unity Editor версии 2022.*.
+- Visual Studio 2022 или совместимый редактор C#.
 
-## License
+## Установка и запуск
 
-[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+1. Клонируйте репозиторий:
+	```bash
+	git clone <URL_ВАШЕГО_РЕПОЗИТОРИЯ>
+	```
+2. Откройте папку проекта в Unity Hub.
+3. Запустите проект в Unity Editor (версия 2022.*).
+4. Откройте сцену [Assets/Scenes/Workspace.unity](Assets/Scenes/Workspace.unity) для работы с моделью.
+5. Нажмите Play, чтобы запустить симуляцию.
+
+## Структура проекта
+
+- [Assets](Assets) - игровые ресурсы, сцены, скрипты, префабы, материалы и текстуры.
+- [Assets/Scenes](Assets/Scenes) - основные сцены приложения (например, меню и рабочее пространство).
+- [Assets/Scripts](Assets/Scripts) - логика приложения и поведение компонентов.
+- [Packages](Packages) - зависимости Unity Package Manager.
+- [ProjectSettings](ProjectSettings) - настройки проекта Unity.
+
+## Базовый сценарий использования
+
+1. Откройте сцену [Assets/Scenes/Workspace.unity](Assets/Scenes/Workspace.unity).
+2. Добавьте необходимые объекты из префабов.
+3. Настройте соединения и параметры взаимодействия между элементами.
+4. Запустите расчет/симуляцию и проанализируйте результат по шагам.
+5. Сохраните конфигурацию для последующих экспериментов.
+
+## Лицензия
+
+Проект распространяется по лицензии [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+## Статус проекта
+
+Завершен
